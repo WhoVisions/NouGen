@@ -1,40 +1,61 @@
-# 🪐 NouGen
+# 🪐 NouGen: The Application & Tool Layer of The Observatory
 
-> The Observatory's recursive intelligence substrate. Skills, tools, and morphed patterns extracted from fleet operations.
-
-## What is NouGen?
-
-NouGen is the **recursive self-improvement engine** for [The Observatory](https://github.com/WhoVisions). It captures intelligence from every source — YouTube videos, research papers, production incidents, fleet operations — and folds it back into reusable skills, tools, and architectural patterns.
-
-**The Mantra**: *Shard & Recurse so you don't Rehearse.*
-
-## Skills
-
-### `05-web-frontend/gsap-scroll-video-website`
-Build scroll-driven animated websites with video background synchronized to scroll position using **Vite + GSAP ScrollTrigger + SplitText + Lenis**. Includes a `scaffold.sh` bootstrapper.
-
-### `13-automation/plan-execute-autonomous`
-Formalizes the **Plan → Execute → Review → Deploy** autonomous workflow. The AI creates its own implementation plan, reviews it with the user, then executes the entire plan autonomously.
-
-### `99-fleet-custom/nougentube-morph`
-**NougenMorph**: Extracts actionable patterns, tools, skills, and architectural DNA from NougenTube video digests. The meta-skill that creates other skills.
-
-## The Morph Pipeline
-
-```
-Watch → Digest → Extract → Build → Shard
-  │        │         │        │       │
-  │        │         │        │       └─ Fold back into NouGen substrate
-  │        │         │        └─ Generate SKILL.md + scripts
-  │        │         └─ Identify stack/workflow/creative patterns
-  │        └─ nougen tube <url>
-  └─ YouTube / arXiv / production
-```
-
-## Origin
-
-First morph sourced from: **"The EASY Way To Build Websites With NEW Opus 5.5"** by AI Foundations ([youtube](https://www.youtube.com/watch?v=5ryZ6Tsco9c))
+> **The Sovereign AI Wrapper & Autonomous Tool Forge for [NouGenShards](https://github.com/Who-Visions/NouGenShards).**
 
 ---
 
-*Built by The Observatory fleet. Coach plans. Player performs. GM wins championships.*
+## 🏛️ Fleet Architecture Topology
+
+```
+┌──────────────────────────────────────────────────────────────┐
+│                    WhoVisions / NouGen                       │
+│        (Application Layer, AI Wrapper, Tools & Skills)       │
+├──────────────────────────────┬───────────────────────────────┤
+│  • Agent Toolkits & Skills   │  • Persistent Identity Engine │
+│  • NouGenVoice (Kokoro/MLX)  │  • NougenMorph Recursive Pipeline│
+│  • High-Level Python SDK     │  • Developer CLI & Workflows  │
+└──────────────────────────────┴───────────────────────────────┘
+                               │
+                (Sub-50ms Context Intercept)
+                               ▼
+┌──────────────────────────────────────────────────────────────┐
+│                  Who-Visions / NouGenShards                  │
+│               (The Bare-Metal Neural Substrate)              │
+├──────────────────────────────────────────────────────────────┤
+│  • 9 Distributed Databases (~2.9 GB, 129,566+ Active Shards) │
+│  • 2.85M Mutation Event Stream (history.db)                  │
+│  • Real-Time Relay Bus, IPC Sockets & Swarm Orchestration    │
+└──────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 💎 What Lives in NouGen?
+
+If **NouGenShards** is the Linux kernel and the memory bank, **NouGen** is the operating system, the toolchain, and the developer interface:
+
+### 1. 🛠️ Autonomous Skills & Blueprints (`skills/`)
+- **`05-web-frontend/gsap-scroll-video-website`**: Scroll-driven video sites with Vite, GSAP, Lenis & `scaffold.sh`.
+- **`13-automation/plan-execute-autonomous`**: 4-phase autonomous execution engine (Rule 0.10: Finish The Race).
+- **`99-fleet-custom/nougentube-morph`**: Meta-skill for converting external videos & research papers into sharded tools.
+
+### 2. 🧬 Persistent Generative Identity (`src/nougen_visual_identity/`)
+- Universal multi-tenant visual identity engine ($I = \{E_{id}, G_{face}, T_{marks}, H_{hair}, B_{body}\}$).
+- Character inheritance (`IdentityRoot` $\to$ `IdentityVariant` across causal branches).
+- The Identity Manifold: Mahalanobis distance $D_M(e)$, shrinkage covariance, and scene-aware reference selection.
+- Hard invariant rejection gates preventing biometric drift regardless of aesthetic scores.
+
+### 3. 🎙️ Neural Voice Gateway (`tools/speak.py`)
+- Local Kokoro-82M ONNX neural speech synthesis.
+- Studio female voice (`af_bella` at 1.1x cadence) running on local silicon with zero cloud token burn.
+- Hardware-bound routing directly to physical speaker devices.
+
+### 4. 📚 Frontier Engineering Doctrine (`docs/`)
+- **`top_001_percent_methods.md`**: The 4 Sovereign Laws of Frontier AI Engineering.
+- **`fleet_relay_execution_board.md`**: Live operational audit of multi-node relay handoffs.
+
+---
+
+## ⚡ The Supreme Fleet Mantra
+> **"Shard and recurse so you don't rehearse."**  
+> *Shard text describes identity. Identity capsules encode it. Render validators enforce it.*
