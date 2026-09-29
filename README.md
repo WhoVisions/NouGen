@@ -1,40 +1,31 @@
 # 🪐 NouGen
 
-> The Observatory's recursive intelligence substrate. Skills, tools, and morphed patterns extracted from fleet operations.
+> The application and developer layer for [NouGenShards](https://github.com/Who-Visions/NouGenShards).
 
-## What is NouGen?
+NouGen provides the user-facing workflows, reusable skills, and high-level tools that build on NouGenShards. NouGenShards owns durable shard storage and the lower-level context, retrieval, and relay substrate.
 
-NouGen is the **recursive self-improvement engine** for [The Observatory](https://github.com/WhoVisions). It captures intelligence from every source — YouTube videos, research papers, production incidents, fleet operations — and folds it back into reusable skills, tools, and architectural patterns.
+## Architecture
 
-**The Mantra**: *Shard & Recurse so you don't Rehearse.*
+- **WhoVisions/NouGen** — application workflows, developer-facing tools, reusable skills, and integrations.
+- **Who-Visions/NouGenShards** — durable context storage, retrieval primitives, relay infrastructure, and identity capsule contracts.
 
-## Skills
+The application layer orchestrates work and uses the Shards substrate for persistent context. Storage and retrieval concerns stay in NouGenShards; product workflows and integrations stay in NouGen.
 
-### `05-web-frontend/gsap-scroll-video-website`
-Build scroll-driven animated websites with video background synchronized to scroll position using **Vite + GSAP ScrollTrigger + SplitText + Lenis**. Includes a `scaffold.sh` bootstrapper.
+## What lives here
 
-### `13-automation/plan-execute-autonomous`
-Formalizes the **Plan → Execute → Review → Deploy** autonomous workflow. The AI creates its own implementation plan, reviews it with the user, then executes the entire plan autonomously.
+- **Reusable skills** in `skills/`, including the [GSAP scroll video website](skills/05-web-frontend/gsap-scroll-video-website), [autonomous plan and execute workflow](skills/13-automation/plan-execute-autonomous), and [NouGenTube morph](skills/99-fleet-custom/nougentube-morph).
+- **Local voice utility** at `tools/speak.py`.
+- **NouGenTube morph workflow**, which turns source material into reusable tools, skills, and patterns.
 
-### `99-fleet-custom/nougentube-morph`
-**NougenMorph**: Extracts actionable patterns, tools, skills, and architectural DNA from NougenTube video digests. The meta-skill that creates other skills.
-
-## The Morph Pipeline
+## Morph pipeline
 
 ```
 Watch → Digest → Extract → Build → Shard
-  │        │         │        │       │
-  │        │         │        │       └─ Fold back into NouGen substrate
-  │        │         │        └─ Generate SKILL.md + scripts
-  │        │         └─ Identify stack/workflow/creative patterns
-  │        └─ nougen tube <url>
-  └─ YouTube / arXiv / production
+  │        │         │        │       └─ Store reusable context in NouGenShards
+  │        │         │        └─ Generate skills and tools
+  │        │         └─ Identify workflows and patterns
+  │        └─ Summarize source material
+  └─ YouTube, research, or operational knowledge
 ```
 
-## Origin
-
-First morph sourced from: **"The EASY Way To Build Websites With NEW Opus 5.5"** by AI Foundations ([youtube](https://www.youtube.com/watch?v=5ryZ6Tsco9c))
-
----
-
-*Built by The Observatory fleet. Coach plans. Player performs. GM wins championships.*
+**Shard and recurse so you don't rehearse.**
