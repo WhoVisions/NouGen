@@ -29,3 +29,16 @@ Watch → Digest → Extract → Build → Shard
 ```
 
 **Shard and recurse so you don't rehearse.**
+
+<!-- nougen:fleet-role:begin (generated from nougen-handoffs fleet/manifest.json; edit the manifest, not this block) -->
+## Fleet role
+
+| | |
+|---|---|
+| Role | UNDECLARED (umbrella 'recursive intelligence substrate'; overlaps NouGenShards?) |
+| Kind | core |
+| Status | undeclared |
+| Canonical for | — |
+| Visibility | public |
+
+<!-- nougen:fleet-role:end -->
